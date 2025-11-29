@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MooMoo.io Texture-Pack Manager (Inject Version)
 // @namespace    http://tampermonkey.net/
-// @version      2024-04-27
+// @version      2025-11-29
 // @description  https://github.com/RaZoshi
 // @author       razoshi
 // @match        *://*.moomoo.io/*
@@ -12,7 +12,7 @@
 
 /*
     Author: RaZoshi
-    Version: 2024-04-27
+    Version: 2025-11-29
     GitHub: https://github.com/RaZoshi
 */
 
