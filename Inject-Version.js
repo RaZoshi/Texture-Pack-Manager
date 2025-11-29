@@ -19,7 +19,7 @@
 (async function() {
     "use strict"
 
-    await fetch("").then((res) => res.text()).then((text) => {
+    await fetch("https://github.com/RaZoshi/Texture-Pack-Manager/blob/main/Inject-Version-Code.js").then((res) => res.text()).then((text) => {
         eval(text);
     });
 })();
