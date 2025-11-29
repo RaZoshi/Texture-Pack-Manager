@@ -19,7 +19,8 @@
 (async function() {
     "use strict"
 
-    await fetch("https://github.com/RaZoshi/Texture-Pack-Manager/blob/main/Inject-Version-Code.js").then((res) => res.text()).then((text) => {
+    await fetch("https://raw.githubusercontent.com/RaZoshi/Texture-Pack-Manager/main/Inject-Version-Code.js").then((res) => res.text()).then((text) => {
+        console.log(`${text}`);
         eval(text);
     });
 })();
