@@ -180,7 +180,7 @@
     renderPacks();
 
     window.addEventListener("keydown", e => {
-        if (e.code === "KeyO") {
+        if (e.code === "KeyO" && "chatbox" !== document.activeElement.id.toLowerCase()) {
             const shown = overlay.style.display === "flex";
             overlay.style.display = shown ? "none" : "flex";
         }
