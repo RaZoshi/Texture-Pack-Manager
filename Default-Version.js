@@ -33,6 +33,7 @@
         { name: "The Black Swordsman", icon: "https://i.imgur.com/7vXJpkE.png", desc: "eXistenZ's Texture Pack" },
         { name: "RSD Pack", icon: "https://i.imgur.com/xkD5fsY.png", desc: "R0YqL & RoTama's Texture Pack" },
         { name: "Short Giraffe Pack", icon: "https://i.imgur.com/lNGLdjM.png", desc: "Short Giraffe's Texture Pack" },
+        { name: "Ship Of War Pack", icon: "https://i.imgur.com/eXiXYIR.png", desc: "Ship Of War's Texture Pack" },
     ];
 
     resourcePack.pack = packs[0].name;
@@ -372,6 +373,35 @@
         "stick_1_r": "",
     };
 
+    var shipOfWarTexturesHats = {
+        40: "https://i.imgur.com/lKGtlDF.png",
+        6: "https://i.imgur.com/2NXcXU8.png",
+        7: "https://i.imgur.com/8xB1Q3u.png",
+        12: "https://i.imgur.com/VSUId2s.png",
+        9: "https://i.imgur.com/1nY34aL.png",
+        23: "https://i.imgur.com/B9AcmcN.png",
+        16: "https://i.imgur.com/WHJch5H.png",
+        31: "https://i.imgur.com/JPMqgSc.png",
+        15: "https://i.imgur.com/YRQ8Ybq.png",
+        21: "https://i.imgur.com/npW40IC.png",
+        13: "https://i.imgur.com/EwkbsHN.png",
+        11: "https://i.imgur.com/Gu3ZJlY.png",
+        18: "https://i.imgur.com/in5H6vw.png",
+        20: "https://i.imgur.com/0jqsSgS.png",
+        "11_p": "https://i.imgur.com/NCkyBlK.png",
+        "14_p": "https://i.imgur.com/836PpI0.png",
+        14: "https://i.imgur.com/V4l7o1h.png",
+        "14_top": "https://i.imgur.com/zWJTlbI.png",
+        53: "https://i.imgur.com/1xuvr4N.png",
+        "53_top": "https://i.imgur.com/1xuvr4N.png",
+    };
+
+    var shipOfWarTexturesAccessories = {
+        21: "https://i.imgur.com/tuw16mP.png",
+        18: "https://i.imgur.com/0rmN7L9.png",
+        19: "https://i.imgur.com/Qyxy7IB.png"
+    };
+
     function getTexturePackImg(id, type) {
         if (resourcePack.pack == "Old Textures") {
             if (oldTexturesHats[id] && type == "hat") {
@@ -418,6 +448,12 @@
                 return theBlackSwordsmanTexturesWeapons[id];
             } else if (theBlackSwordsmanTexturesAnimals[id] && type == "animals") {
                 return theBlackSwordsmanTexturesAnimals[id];
+            }
+        } else if (resourcePack.pack == "Ship Of War Pack") {
+            if (shipOfWarTexturesHats[id] && type == "hat") {
+                return shipOfWarTexturesHats[id];
+            } else if (shipOfWarTexturesAccessories[id] && type == "acc") {
+                return shipOfWarTexturesAccessories[id];
             }
         } else {
             if (type == "acc") {
