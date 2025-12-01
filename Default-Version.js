@@ -32,9 +32,22 @@
         { name: "Red Dragon", icon: "https://i.imgur.com/tMGhbhN.png", desc: "eXistenZ's Texture Pack" },
         { name: "The Black Swordsman", icon: "https://i.imgur.com/7vXJpkE.png", desc: "eXistenZ's Texture Pack" },
         { name: "RSD Pack", icon: "https://i.imgur.com/xkD5fsY.png", desc: "R0YqL & RoTama's Texture Pack" },
+        { name: "Short Giraffe Pack", icon: "https://i.imgur.com/lNGLdjM.png", desc: "Short Giraffe's Texture Pack" },
     ];
 
     resourcePack.pack = packs[0].name;
+
+    var sfTexturesHats = {
+        6: "https://i.imgur.com/fRxZdbG.png",
+        7: "https://i.imgur.com/nKZTSaJ.png",
+        40: "https://i.imgur.com/FdQ6VB1.png",
+        31: "https://i.imgur.com/VUf94nW.png",
+        42: "https://u.cubeupload.com/Game_player/giraffeheat.png",
+        12: "https://i.imgur.com/Cbp76dH.png",
+        20: 'https://u.cubeupload.com/ShOrT_GiRaFfE/samuraitp.png',
+        53: "https://i.imgur.com/y66dlBd.png#ANTI-WORK",
+        "53_top": "https://imgur.com/Xk9EgYW#ANTI-WORK"
+    };
 
     var rsdTexturesHats = {
         40: "http://i.imgur.com/yp9hwJp.png",
@@ -375,6 +388,10 @@
                 return rsdTexturesAccessories[id];
             } else if (rsdTexturesWeapons[id] && type == "weapons") {
                 return rsdTexturesWeapons[id];
+            }
+        } else if (resourcePack.pack == "Short Giraffe Pack") {
+            if (sfTexturesHats[id] && type == "hat") {
+                return sfTexturesHats[id];
             }
         } else if (resourcePack.pack == "The Warrior Chronicles") {
             if (theWarriorChroniclesTexturesHats[id] && type == "hat") {
