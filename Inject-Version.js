@@ -6,6 +6,8 @@
 // @author       razoshi
 // @match        *://*.moomoo.io/*
 // @match        *://*moomoo.io/*
+// @match        *://*moomootwo.cloud/*
+// @match        *://*old.moomootwo.cloud/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=moomoo.io
 // @grant        none
 // ==/UserScript==
